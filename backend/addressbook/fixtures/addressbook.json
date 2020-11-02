@@ -1,4 +1,4 @@
-[  {"model": "address.User",
+[  {"model": "addressbook.User",
     "pk": 1,
     "fields": {
         "user_name": "goodbyee",
@@ -6,7 +6,7 @@
         "user_password": "helpMe"
    
     }},
-    {"model": "address.User",
+    {"model": "addressbook.User",
     "pk": 2,
     "fields": {
             "user_name": "hellooo",
@@ -14,7 +14,7 @@
             "user_password": "address"
         }}
     ,{     
-        "model": "address.Contact",
+        "model": "addressbook.Contact",
         "pk": 1,
         "fields": {
 
@@ -32,7 +32,7 @@
     }
 },
 {
-    "model": "address.Contact",
+    "model": "addressbook.Contact",
 
     "pk": 2,
     "fields": {
@@ -51,7 +51,7 @@
     }
 },
 {
-    "model": "address.Contact",
+    "model": "addressbook.Contact",
 
     "pk": 3,
     "fields": {
@@ -70,7 +70,7 @@
     }
 },
 {
-    "model": "address.Contact",
+    "model": "addressbook.Contact",
  
     "pk": 4,
     "fields": {
