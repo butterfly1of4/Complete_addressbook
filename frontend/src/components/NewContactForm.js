@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import App from "../App"
 import ReactDOM from 'react-dom';
-// import { Button, Form, FormGroup, Input, Label } from "bootstrap";
+// import { Button, Form, FormGroup, Input, placeholder } from "bootstrap";
 
 import axios from "axios";
 
@@ -51,19 +51,40 @@ class NewContactForm extends Component {
         return (
           <div>
              <form onSubmit={this.props.user ? this.editUser : this.createContact}>
-              <form>
-    
-                <input type="text" label="first_name" name="user_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_first_name)} />
+             <form>
+                <input type="text" placeholder="user" name="user" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_user)} />
               </form>
               <form>
-    
-                <input type="text" name="user_email" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_email)} />
-              </form>      <form>
-    
-                <input type="text" name="user_password" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_password)} />
+                <input type="text" placeholder="firstname" name="first_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_first_name)} />
+              </form>
+              <form>
+                <input type="text" 
+                placeholder="lastname" name="last_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_last_name)} />
+              </form>      
+              <form>
+                <input type="text" placeholder="email" name="email" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_email)} />
+              </form>
+              <form>
+                <input type="text" placeholder="phone"  name="phone" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_phone_number)} />
+              </form>
+              <form>
+                <input type="text" placeholder="home_address"name="home_address" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_home_address)} />
+              </form>
+              <form>
+                <input type="text" placeholder="relation" name="relation" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_relation)} />
+              </form>
+              <form>
+                <input type="text" placeholder="group" name="group" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_group)} />
+              </form>
+              <form>
+                <input type="text" placeholder="age" name="age" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_age)} />
+              </form>
+              <form>
+                <input type="text" placeholder="notes" name="notes" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_notes)} />
               </form>
             </form>
             <button>Send</button>
-            </div>)}
+            </div>)//return
+            }//render
 }
 export default NewContactForm;

@@ -50,14 +50,14 @@ defaultIfEmpty = value => {
          <form onSubmit={this.props.user ? this.editUser : this.createUser}>
           <form>
 
-            <input type="text" name="user_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_name)} />
+            <input type="text" name="user_name" placeholder="user_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_name)} />
           </form>
           <form>
 
-            <input type="text" name="user_email" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_email)} />
+            <input type="text" name="user_email" placeholder="user_email" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_email)} />
           </form>      <form>
 
-            <input type="text" name="user_password" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_password)} />
+            <input type="text" name="user_password" placeholder="user_password" onChange={this.onChange} value={this.defaultIfEmpty(this.state.user_password)} />
           </form>
         </form>
         <button>Send</button>
