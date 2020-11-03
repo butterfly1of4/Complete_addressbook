@@ -1,28 +1,3 @@
-from django.shortcuts import render, redirect
-from .models import User, Contact
-from .forms import UserForm, ContactForm
-from rest_framework import generics
-from .serializers import UserSerializer, ContactSerializer
-
-
-class UserList(generics.ListCreateAPIView):
-    queryset=User.objects.all()
-    serializer_class= UserSerializer
-
-class UserInfo(generics.RetrieveUpdateDestroyAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-class ContactList(generics.ListCreateAPIView):
-    queryset=Contact.objects.all()
-    serializer_class = ContactSerializer
-
-class ContactInfo(generics.RetrieveUpdateDestroyAPIView):
-    queryset= Contact.objects.all()
-    serializer_class=ContactSerializer
-    
-    
-    
  
 #################
 
