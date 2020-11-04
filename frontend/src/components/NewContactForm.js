@@ -52,35 +52,35 @@ class NewContactForm extends Component {
           <div>
              <form onSubmit={this.props.user ? this.editUser : this.createContact}>
              <form>
-                <input type="text" placeholder="user" name="user" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_user)} />
+                <input type="text" placeholder="user" name="user" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_user)} />
               </form>
               <form>
-                <input type="text" placeholder="firstname" name="first_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_first_name)} />
+                <input type="text" placeholder="firstname" name="first_name" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_first_name)} />
               </form>
               <form>
                 <input type="text" 
-                placeholder="lastname" name="last_name" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_last_name)} />
+                placeholder="lastname" name="last_name" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_last_name)} />
               </form>      
               <form>
-                <input type="text" placeholder="email" name="email" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_email)} />
+                <input type="text" placeholder="email" name="email" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_email)} />
               </form>
               <form>
-                <input type="text" placeholder="phone"  name="phone" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_phone_number)} />
+                <input type="text" placeholder="phone"  name="phone" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_phone_number)} />
               </form>
               <form>
-                <input type="text" placeholder="home_address"name="home_address" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_home_address)} />
+                <input type="text" placeholder="home_address"name="home_address" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_home_address)} />
               </form>
               <form>
-                <input type="text" placeholder="relation" name="relation" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_relation)} />
+                <input type="text" placeholder="relation" name="relation" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_relation)} />
               </form>
               <form>
-                <input type="text" placeholder="group" name="group" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_group)} />
+                <input type="text" placeholder="group" name="group" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_group)} />
               </form>
               <form>
-                <input type="text" placeholder="age" name="age" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_age)} />
+                <input type="text" placeholder="age" name="age" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_age)} />
               </form>
               <form>
-                <input type="text" placeholder="notes" name="notes" onChange={this.onChange} value={this.defaultIfEmpty(this.state.contact_notes)} />
+                <input type="text" placeholder="notes" name="notes" onChange={this.onChange} defaultValue={this.defaultIfEmpty(this.state.contact_notes)} />
               </form>
             </form>
             <button>Send</button>

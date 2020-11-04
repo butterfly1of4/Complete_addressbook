@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from "react";
 import App from "../App";
 import ReactDOM from "react-dom";
-// import { Button, Form, FormGroup, Input, Label } from "bootstrap";
+import NewUserForm from "./NewUserForm"
+import { Button, Modal, ModalHeader, ModalBody } from "bootstrap";
 
 import axios from "axios";
 
 import { API_URL } from "../constants";
-import { ModalHeader } from "semantic-ui-react";
+// import { ModalHeader } from "semantic-ui-react";
 
 class NewUserModal extends Component {
   state = {

@@ -1,20 +1,29 @@
 import React, { Component } from "react";
 import App from "../App";
 import ReactDOM from "react-dom";
-// import { Button, Form, FormGroup, Input, Label } from "bootstrap";
+import {Table} from "bootstrap";
 
 import axios from "axios";
 
 import { API_URL } from "../constants";
-import NewUserModel from "./NewUserModal";
-import ConfirmRemovalModal from "./ConfirmModalRemoval";
+import NewUserModal from "./NewUserModal";
+import ConfirmRemovalModal from "./ConfirmRemovalModal";
 
 class UserList extends Component {
   render() {
     const users = this.props.users;
 
     return (
-      <Table dark>
+      <div>
+        
+      </div>
+    )
+  }
+}
+export default UserList;
+
+
+    {/* <Table dark>
         <thead>
           <tr>
             <th>User Name</th>
@@ -51,8 +60,4 @@ class UserList extends Component {
             ))
           )}
         </tbody>
-      </Table>
-    );
-  }
-}
-export default UserList;
+      </Table> */}

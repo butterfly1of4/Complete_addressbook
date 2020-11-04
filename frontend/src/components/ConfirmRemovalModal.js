@@ -1,22 +1,23 @@
 import React, { Component, Fragment } from "react";
 import App from "../App";
 import ReactDOM from "react-dom";
-// import { Button, Form, FormGroup, Input, Label } from "bootstrap";
+import { Button, Modal, ModalHeader, ModalFooter } from "bootstrap";
 
 import axios from "axios";
 
 import { API_URL } from "../constants";
-import { ModalHeader } from "semantic-ui-react";
+// import { ModalHeader } from "semantic-ui-react";
 
 class ConfirmRemovalModal extends Component {
   state = {
     modal: false,
+    // previous: this.state.modal,
   };
   toggle = () => {
-    ({
-      modal: !previous.modal,
-    });
-  };
+    this.setState((previous) => ({
+      modal: !previous.modal
+    }))
+  }
   deleteUser = (pk) => {
     axios.delete(API_URL + pk).then(() => {
       this.props.resetState();
